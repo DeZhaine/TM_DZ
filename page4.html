@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    2.2 Метод підсумовування
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Заснований на використанні лінійної формули:
+                                        <div class="small" align="center">
+                                            <img src="img/formula5.png">
+                                        </div>
+                                        В якості початкової сукупності x<sub><small>r</small></sub>,
+                                        x<sub><small>r-1</small></sub>, ..., x<sub><small>0</small></sub>
+                                        використовуються випадкові числа з діапазону (0, M), що отримуються заздалегідь
+                                        яким-небудь іншим методом. <br>
+                                        Псевдовипадкові числа x<sub><small>i+1</small></sub>, рівномірно розподілені в
+                                        інтервалі (0,1), визначаються в результаті нормалізації цілих чисел
+                                        X<sub><small>i+1</small></sub>; i &#8805; r згідно з наведеною вище формулою. <br>
+                                        В порівнянні з мультиплікативним метод підсумовування дозволяє отримувати
+                                        псевдовипадкові послідовності з тривалішими періодами і кращими якісними
+                                        характеристиками. <br>
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

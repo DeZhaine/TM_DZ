@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    2.7 Моделювання випадкових векторів
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Випадковий вектор визначається проекціями на осі координат. <br>
+                                        Проекції є випадковими величинами, що описуються спільним законом розподілу.
+                                        <br>
+                                        Існують два підходи до моделювання випадкових векторів: <br>
+                                        – з використанням власних функцій щільності компонентів вектора; <br>
+                                        – з використанням кореляційної матриці. <br>
+                                        Постановка задачі: Двовимірний випадковий вектор (&eta;, &xi;), заданий
+                                        спільною функцією щільності f(y, z).
+                                        Необхідно сформувати послідовність його реалізацій, тобто послідовність
+                                        пар значень його координат (y<sub><small>j</sub></small>,
+                                        z<sub><small>j</sub></small>).
+                                        Розв’язання задачі: Визначається окрема функція щільності однієї із складових
+                                        &xi; випадкового вектора:
+                                        <div class="small" align="center">
+                                            <img src="img/formula14.png">
+                                        </div>
+                                    </div>
+                                </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="left">
+                                З послідовності псевдовипадкових чисел, квазірівномірно розподілених
+                                в інтервалі числової осі (0, 1), вибирається чергове число x<sub><small>i</sub></small>
+                                і одним з розглянутих способів визначається відповідне йому значення
+                                z<sub><small>j</sub></small>
+                                випадкової величини &xi;, яка має функцію щільності f<sub><small>l</sub></small>(z).
+                                <br>
+                                Виходячи з умови &xi; = z<sub><small>j</sub></small>, визначається функція щільності
+                                умовного розподілу іншої складової &eta; випадкового вектора: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula15.png">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="left">
+                                Далі з послідовності псевдовипадкових чисел, квазірівномірно розподілених в інтервалі
+                                числової осі (0, 1), витягується наступне число x<sub><small>i+1</sub></small> і
+                                визначається відповідне йому значення y<sub><small>j</sub></small> випадкової величини
+                                &eta;, яка має функцію щільності
+                                f<sub><small>2</sub></small>(y/z<sub><small>j+1</sub></small>).
+                            </div>
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+
+        .ov {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    4.2 Визначення точності і достовірності результатів імітаційного моделювання
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Результати імітаційного моделювання системи носять випадковий
+                                        характер. Для забезпечення їх статистичної стійкості шукані характеристики
+                                        модельованого процесу оцінюються величинами, які обчислюються як середні
+                                        значення досить великої кількості реалізацій. <br>
+                                        Вибір кількості реалізацій залежить від того, які вимоги пред&#39;являються
+                                        до точності і достовірності результатів моделювання. <br>
+                                        Припустимо, що деякий параметр процесу, що досліджується,
+                                        оцінюється за результатами моделювання величиною <a class="ov">x</a>. <br>
+                                        Внаслідок випадкових причин величина <a class="ov">x</a> буде відрізнятися від
+                                        істинного (невідомого і тому шуканого) значення цього параметра a. <br>
+                                    </div>
+                                </div>
+                        </td>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                        <td>
+                            <div class="small" align="left">
+                                Величина &epsilon;, така що <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula17.png">
+                                </div>
+                                називається точністю оцінки <a class="ov">x</a>, а ймовірність &alpha; того, що така
+                                нерівність виконується – достовірністю оцінки <a class="ov">x</a>: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula18.png">
+                                </div>
+                                Згідно з центральною граничною теоремою теорії ймовірностей оцінка
+                                <a class="ov">x</a> при досить великій кількості реалізацій процесу, що моделюється,
+                                матиме розподіл, близький до нормального. <br>
+                                Тому точність оцінки x може бути визначена формулою: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula19.png" width="90%">
+                                </div>
+                                У загальному випадку квантиль t<sub><small>&alpha;</sub></small> (&alpha; - квантиль,
+                                квантиль рівня &alpha;) – це число, для якого виконується умова: значення y випадкової
+                                величини &eta;, що задана функцією розподілу ймовірностей F(y), не перевищує
+                                t<sub><small>&alpha;</sub></small> з ймовірністю &alpha;: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula20.png">
+                                </div>
+                                У даному контексті &alpha; – це ймовірність того, що випадкова величина &eta; прийме
+                                значення y, менше або рівне t<sub><small>&alpha;</sub></small>.
+
+                                </big>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="center">
+                                Ілюстрація до визначення квантиля нормального розподілу. <br><br>
+
+                                <div class="small" align="center" >
+                                    <img src="img/graph.png" width="90%">
+                                </div>
+                                </big>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    Головна Сторінка
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <p class="main">
+                    <img src="gif/main.gif" width="50%">
+                </p class="main">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="big" align="center"><big>
+                                            <p class="main">
+                                                Зміст
+                                        </big></p class="main">
+                                        <div class="small" align="left">
+                                            <big>Для того щоб перейти на сторінку з певною темою потрібно тицьнути на
+                                                назву теми.</big><br><br>
+                                                1 сторінка - <a href="page1.html"> 1. Основні поняття теорії моделювання. <br>
+                                            </a>
+                                            2 сторінка - <a href="page2.html"> 2. Моделювання випадкових явищ. <br>
+                                            </a>
+                                            3 сторінка - <a href="page3.html"> 2.1 Мультиплікативний метод (метод вирахувань). <br>
+                                            </a>
+                                            4 сторінка - <a href="page4.html"> 2.2 Метод підсумовування. <br>
+                                            </a>
+                                            5 сторінка - <a href="page5.html"> 2.3 Перевірка якості послідовностей випадкових чисел,
+                                                що обчислюються алгоритмічними методами. <br>
+                                            </a>
+                                            6 сторінка - <a href="page6.html"> 2.4 Моделювання випадкових подій <br>
+                                            </a>
+                                            7 сторінка - <a href="page7.html"> 2.5 Моделювання марковських ланцюгів <br>
+                                            </a>
+                                            8 сторінка - <a href="page8.html"> 2.6 Моделювання випадкових величин <br>
+                                            </a>
+                                            9 сторінка - <a href="page9.html"> 2.7 Моделювання випадкових векторів <br>
+                                            </a>
+                                            10 сторінка - <a href="page10.html"> 3. Технологія імітаційного моделювання <br>
+                                            </a>
+                                            11 сторінка - <a href="page11.html"> 4.1 Обчислення ймовірнісних характеристик випадкового
+                                                процесу, що моделюється <br>
+                                            </a>
+                                            12 сторінка -  <a href="page12.html"> 4.2 Визначення точності і достовірності результатів
+                                                імітаційного моделювання <br>
+                                            </a>
+                                            13 сторінка - <a href="page13.html"> 5. Моделювання систем масового обслуговування <br>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="big" align="center"><big>
+                                            <p class="main">
+                                                Призначення
+                                        </big></p class="main">
+                                        <div class="small" align="left">
+                                            Даний посібник забезпечує процес навчання, сприяє засвоєнню знань в умовах
+                                            зростання вимог до підготовки й перепідготовки фахівців. <br>
+                                            В ньому коротко подані основні теми даного предмету, для їх простішого
+                                            повторення. <br>
+                                            Для переходу до конкретної теми, можна використати зміст та натиснути
+                                            потрібну тему. <br>
+                                            </big>
+                                        </div>
+                                    </div>
+                                    <div class="big" align="center">
+                                        Повідомити про помилку <br>
+                                        <a href="mailto:but.jenia@ukr.net?subject=Неполадки з сайтом"> Зворотній зв'язок
+                                        </a>
+                                    </div>
+                        </td>
+                    </tr>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+
+        .ov {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    4.1 Обчислення ймовірнісних характеристик випадкового процесу, що моделюється
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Якщо при моделюванні системи враховуються випадкові чинники, то
+                                        шуканими величинами є ймовірності випадкових подій, середні значення і
+                                        дисперсії випадкових величин, кореляційні моменти та інші ймовірнісні
+                                        характеристики процесу функціонування модельованої системи. <br>
+                                        Припустимо, що шуканою величиною є ймовірність настання деякої
+                                        реальної випадкової події A, а в результаті відтворення N реалізацій процесу,
+                                        що моделюється, ця подія формально наступила m разів. <br>
+                                        Тоді оцінкою <a class="ov">p</a> шуканої ймовірності p(A) може служити частота
+                                        формального настання події A: <br>
+                                        <div class="small" align="center">
+                                            <img src="img/formula21.png">
+                                        </div>
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="left">
+                                Аналогічний підхід використовується при оцінюванні ймовірностей
+                                можливих значень випадкової величини &xi;, тобто закону її розподілу. <br>
+                                Для цього область можливих значень випадкової величини розбивається на n
+                                напіввідкритих інтервалів. <br>
+                                Нехай m<sub><small>k</sub></small> – кількість попадань значень випадкової величини &xi;
+                                в k-й інтервал в результаті відтворення N реалізацій процесу, що моделюється;
+                                k = <a class="ov">1,n</a>. <br>
+                                Оцінка <a class="ov">p</a><sub><small>k</sub></small> ймовірності можливих значень
+                                випадкової величини &xi; обчислюється за формулою: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula22.png">
+                                </div>
+                                Оцінка <a class="ov">x</a> середнього значення випадкової величини &xi;: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula23.png" width="90%">
+                                </div>
+                                Оцінка <a class="ov">D</a> дисперсії випадкової величини &xi; може бути обчислена за
+                                формулою:
+                                <div class="small" align="center">
+                                    <img src="img/formula24.png">
+                                </div>
+                                </big>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                        <td>
+                            <div class="small" align="left">
+                                Оцінку <a class="ov">K</a>(t', t<sup><small>k</sup></small>), кореляційної функції
+                                випадкового процесу z(t) для моментів часу t', t<sup><small>k</sup></small> &#8712;
+                                {t<sub><small>k</sub></small>; k = <a class="ov">1,r</a>} можна обчислити за формулою:
+                                <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula25.png">
+                                </div>
+                                Щоб уникнути необхідності зберігати всі проміжні результати
+                                обчислень, на практиці для визначення оцінки <a class="ov">K</a>(t',
+                                t<sup><small>k</sup></small>) використовується формула: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula26.png">
+                                </div>
+                                </big>
+                            </div>
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

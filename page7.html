@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+
+        .ov {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    2.5 Моделювання марковських ланцюгів
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Марковський ланцюг (ланцюг Маркова) є окремою формою так званого марківського
+                                        випадкового процесу. <br>
+                                        Марковський випадковий процес – це випадковий процес, який має таку властивість:
+                                        для кожного моменту часу t' ймовірність будь-якого стану системи (об'єкту
+                                        моделювання) у майбутньому (при t > t' ) залежить тільки від її стану у
+                                        теперішньому (при t = t" ) і не залежить від того, коли і яким чином система
+                                        прийшла в цей стан. <br>
+                                        Марковський випадковий процес з дискретними станами і дискретним
+                                        часом отримав назву дискретного марковського ланцюга (стохастичного
+                                        автомата, імовірнісного автомата, P-схеми, P-моделі). <br>
+                                        Тобто марковський ланцюг є моделлю випадкового процесу, що розвивається в
+                                        дискретному часі. <br><br>
+                                        Відмітні особливості дискретних марковських ланцюгів: <br>
+                                        • простір станів системи є кінцевою множиною Z = {z<sub><small>i</small></sub> |
+                                        i = <a class="ov">1, m</a>}; <br>
+                                        • переходи системи із стану в стан можливі тільки в строго визначені,
+                                        заздалегідь фіксовані моменти часу t<sub><small>1</small></sub>,
+                                        t<sub><small>2</small></sub>, t<sub><small>3</small></sub>, ...
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="big" align="center"><big>
+                                    <p class="main">
+                                        Резюме
+                                </big></p class="main">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="left">
+                                На кожному m-у етапі моделювання марковського ланцюга розглядається j -й рядок матриці
+                                переходів, що відповідає стану системи на початок етапу. Відповідно до ймовірностей, що
+                                містяться в цьому рядку, визначається номер k' інтервалу числової осі (0,1), в який
+                                потрапляє чергове випадкове число x<sub><small>i+m</small></sub>. <br>
+                                Цей номер визначає стан системи, в який вона переходить на даному етапі.
+                                </big>
+                            </div>
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

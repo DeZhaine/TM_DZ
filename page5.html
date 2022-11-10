@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+
+        .ov {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    2.3 Перевірка якості послідовностей випадкових чисел, що обчислюються алгоритмічними методами
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <div class="small" align="left">
+                            Перевіряється: <br>
+                            – рівномірність розподілу псевдовипадкових чисел в інтервалі числової
+                            осі (0,1); <br>
+                            – незалежність псевдовипадкових чисел. <br>
+                            Перевірка рівномірності розподілу псевдовипадкових чисел здійснюється за допомогою тесту
+                            частот, перевірка незалежності – за допомогою тесту пар. <br>
+                        </div>
+                    </tr>
+                    <tr align="center">
+                        <td> <big>
+                                <p class="main">
+                                    Тест частот
+                            </big></p class="main">
+                        </td>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Гіпотеза про рівномірність розподілу чисел x<sub><small>i</sub></small>, i = <a
+                                            class="ov"> 1,N</a> в інтервалі числової осі (0,1) перевіряється за
+                                        допомогою критерію Пірсона. <br>
+                                        Для цього обчислюється значення випадкової величини:
+                                        <div class="small" align="center">
+                                            <img src="img/formula6.png">
+                                        </div>
+                                        Очевидно, чим менше розрізняються емпіричні і теоретичні частоти, тим
+                                        менше значення величини &Chi;<sup><small>2</sup></small>. <br>
+                                        Отже, вона характеризує близькість емпіричного і теоретичного
+                                        розподілу. <br>
+                                    </div>
+                                </div>
+                        </td>
+                        <td>
+                            <div class="big" align="center"><big>
+                                    <p class="main">
+                                        Тест пар
+                                </big></p class="main">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                        <td>
+                            <div class="small" align="left">
+                                Тест пар служить для перевірки незалежності псевдовипадкових чисел
+                                x<sub><small>i</sub></small>, i = <a class="ov"> 1,N</a>, тобто відсутності кореляції
+                                між ними. <br>
+                                Кількість пар співпадає з кількістю чисел N. <br>
+                                Внаслідок залежності пар функція &Chi;<sup><small>2</sup></small> буде розподілена
+                                згідно із законом, що відрізняється від розподілу «хі-квадрат». <br>
+                                Тому для обчислення значень величини &Chi;<sup><small>2</sup></small> в даному випадку
+                                використовується більш складна формула, яка включає компонент, що
+                                компенсує цю відмінність: <br>
+                                <div class="small" align="center">
+                                    <img src="img/formula7.png">
+                                </div>
+                                Обчислена таким чином величина розподілена згідно із законом
+                                &Chi;<sup><small>2</sup></small> з k = m(m-1) ступенями свободи. <br>
+                                Гіпотеза про незалежність псевдовипадкових чисел x<sub><small>i</sub></small>, i = <a
+                                    class="ov"> 1,N</a> приймається, якщо для вибраного рівня значущості &Alpha;
+                                виконується умова:
+                                <div class="small" align="center">
+                                    <img src="img/formula8.png">
+                                </div>
+                                Інакше гіпотеза відхиляється.
+                                </big>
+                            </div>
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>

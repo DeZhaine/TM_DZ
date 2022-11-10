@@ -1,0 +1,62 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px; /*Обнуляємо поля і відступи, тому що різні браузери по-різному їх сприймають. */
+    padding: 0px;
+    text-align:center; /*Вирівнюємо макет (вміст елемента body буде посередині) по центру в старих
+    версіях браузерів */
+    }
+    
+    #container{
+    margin: 0 auto; /*вирівнюємо макет по центру в сучасних браузерах */
+    width:650px;
+    }
+    
+    /*Вводимо стилі для голови сайта */
+    #header{
+    background-color: #f00;
+    }
+    
+    /* Вводимо для лівої колонки сайта */
+    #left{
+    background-color: #a700da;
+    }
+    
+    /* Вводимо стилі для блоку контента */
+    #content {
+    overflow: auto;
+    background-color:#0044ff;
+    margin-left:150px;
+    margin-right:150px;
+    float:center;
+    }
+    
+    #content h1 {
+    margin:0px; /* Обнуляємо відступи для заголовка першого рівня, що міститься в блоці
+    контенту.*/
+    }
+    
+    #right{
+    background-color: #a700da;
+    }
+    
+    /* Вводимо стилі для підвалу сайта */
+    #footer{
+    overflow: auto;
+    background-color: #eeff00;
+    clear:both;
+    border: 10px solid #FF033E;
+    }
+
+    #left{
+    width:150px; /*ширина колонки */
+    float:left; /*обов’язкове вирівнювання по лівому краю,
+    з включенням обтікання*/
+    height: 195px;
+    }
+    
+    #right {
+    width:150px;
+    float:right; 
+    height: 195px;
+    } 

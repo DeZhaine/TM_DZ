@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>margin</title>
+    <style type="text/css">
+        p.main {
+            font-style: "Times New Roman";
+            font-size: 150%;
+        }
+
+        body {
+            background-color: #00A86B;
+        }
+
+        BODY {
+            margin: 0;
+            /* Прибираємо відступи */
+        }
+
+        div.big {
+            margin: 0%;
+            /* Відступи навколо елемента */
+            background: #00A86B;
+            /* Колір фону */
+            padding: 10px;
+            /* Поля навколо тексту */
+        }
+
+        div.small {
+            background: #FDE910;
+            /* Колір фону */
+            border: 10px solid #FF033E;
+            /* Параметри рамки */
+            padding: 30px;
+            /* Поля навколо тексту */
+            margin: 30px;
+            /* Відступи навколо */
+        }
+
+        h1 {
+            background-color: red;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+        }
+
+        .menu_nav {
+            list-style: none;
+            /* ховаємо маркери */
+        }
+
+        .menu_nav li {
+            float: left;
+            /* розташовуємо елементи списку в один ряд */
+            margin-right: 15px;
+            /* робимо відступ, щоб пункти меню не зливалися */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*Прибираємо підкреслення посилання*/
+        .menu_nav li a {
+            display: inline-block;
+            /* змінюємо відображення на блок, щоб мати можливість задавати внутрішні
+відступи */
+            padding: 3px 5px;
+            background: #FDE910;
+            color: #000;
+            position: relative;
+        }
+
+        .menu_nav li a:hover {
+            background: #ff0404;
+            color: #fff;
+        }
+
+        .ov {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sound.js"></script>
+
+    <ul class="menu_nav">
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="page1.html">Сторінка 1</a></li>
+        <li><a href="page2.html">Сторінка 2</a></li>
+        <li><a href="page3.html">Сторінка 3</a></li>
+        <li><a href="page4.html">Сторінка 4</a></li>
+        <li><a href="page5.html">Сторінка 5</a></li>
+        <li><a href="page6.html">Сторінка 6</a></li>
+        <li><a href="page7.html">Сторінка 7</a></li>
+        <li><a href="page8.html">Сторінка 8</a></li>
+        <li><a href="page9.html">Сторінка 9</a></li>
+        <li><a href="page10.html">Сторінка 10</a></li>
+        <li><a href="page11.html">Сторінка 11</a></li>
+        <li><a href="page12.html">Сторінка 12</a></li>
+        <li><a href="page13.html">Сторінка 13</a></li>
+        <li><a href="about.html">Про автора</a></li>
+    </ul>
+    <div class="big" align="center"><b><big>
+                <p class="main">
+                <h1>
+                    2.4 Моделювання випадкових подій
+                </h1><b>
+            </big></p class="main">
+            <div class="big">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <div class="small" align="left">
+                            Припустимо, в процесі функціонування модельованого об'єкту деяка
+                            подія A настає з ймовірністю p. <br>
+                            При моделюванні цього процесу вважатимемо, що подія A : <br>
+                            – сталася, якщо чергове псевдовипадкове число x<sub><small>i</small></sub> &#8804; p; <br>
+                            – не сталася, якщо x<sub><small>i</small></sub> &#8804; p. <br>
+                            Ймовірність виконання умови x<sub><small>i</small></sub> > p дорівнює ймовірності настання
+                            події A : <br>
+                            <div class="small" align="center">
+                                <img src="img/formula9.png">
+                            </div>
+                        </div>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                        <td> <big>
+                                <p class="main">
+                                    Підхід 1
+                            </big></p class="main">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="big" align="center"><big>
+                                    <p class="main">
+                                        Підхід 2
+                                </big></p class="main">
+                        </td>
+                        <td>
+                            <div>
+                                <div>
+                                    <div class="small" align="left">
+                                        Спочатку перевіряється справедливість нерівності <br>
+                                        x<sub><small>i+1</small></sub> &#8804; p(A). <br>
+                                        Якщо вона виконується, вважаємо, що подія A настала. <br>
+                                        Потім перевіряється справедливість нерівності: <br>
+                                        x<sub><small>i+1</small></sub> &#8804; p(B/A). <br>
+                                        Залежно від того, виконується вона або ні, робимо висновок про настання
+                                        або ненастання події B.
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="small" align="left">
+                                Складні події AB, A<a class="ov">B</a>, B<a class="ov">A</a>, і <a class="ov">A</a><a
+                                    class="ov">B</a> розглядаються як неспільні випадкові події, що становлять повну
+                                групу. <br>
+                                Ймовірність їх настання обчислюється за формулами:
+                                <div class="small" align="center">
+                                    <img src="img/formula10.png">
+                                </div>
+                                </big>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/dot.png" width="1%">
+                        </td>
+                    </tr>
+            </div>
+</body>
+
+</html>
